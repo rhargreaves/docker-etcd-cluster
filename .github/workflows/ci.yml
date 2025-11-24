@@ -17,18 +17,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Bringup the environment
-      run: docker compose up -d
-    - name: Sleep for 60 seconds
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '60s'
-    - name: List all containers
-      run: docker ps -a
-    - name: Testing connection to Etcd cluster via nginx
-      run: |
-        cd $GITHUB_WORKSPACE
-        python3 -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run Tests
-      run: python3 test/etcd-test.py
+    - name: Test
+      run: ./test.sh
