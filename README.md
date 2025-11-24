@@ -1,8 +1,6 @@
 # Simple etcd cluster
 
-[![Etcd cluster CI](https://github.com/rhargreaves/docker-etcd-cluster/actions/workflows/ci.yml/badge.svg)](https://github.com/rhargreaves/docker-etcd-cluster/actions/workflows/ci.yml)
-
-![etcd](https://garutilorenzo.github.io/images/etcd.png)
+[![etcd cluster CI](https://github.com/rhargreaves/docker-etcd-cluster/actions/workflows/ci.yml/badge.svg)](https://github.com/rhargreaves/docker-etcd-cluster/actions/workflows/ci.yml)
 
 ### Requirements
 
